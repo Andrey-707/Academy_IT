@@ -92,7 +92,7 @@ def fib(n):
 
 # run TEST_5
 start5 = time()
-print("RESULT:", fib(45))                                                    # ORESULT: 1134903170
+print("RESULT:", fib(45))                                                    # RESULT: 1134903170
 print("TIME:", time() - start5)                                              # TIME:  0.0
 
 print() # пустая строка
