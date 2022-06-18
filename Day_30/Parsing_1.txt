@@ -1,31 +1,38 @@
+# -*- coding: utf-8 -*-
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Главная страница блога</title>
+    <title>Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° Р±Р»РѕРіР°</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-    <h1>Сраница пользователя Mr. Anderson</h1>
+    <h1>РЎС‚СЂР°РЅРёС†Р° РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ Mr. Anderson</h1>
+    <h1>Р•С‰С‘ РѕРґРёРЅ h1 Р·Р°РіРѕР»РѕРІРѕРє</h1>
     <div class="user__data">
         <div class="user__avatar">
             <img src="user_avatar.jpg" alt="">
         </div>
         <div class="user__info">
+<!--            <a href="" class="user__name">-->
+<!--                <span>Mrs Purple</span>-->
+<!--            </a>-->
             <div class="user__name" id="aaa">
                 <span>Mr Anderson</span>
             </div>
             <div class="user__birth__date">
-                <span>Дата рождения:</span>
+                <span>Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ:</span>
                 <span>01.01.1970</span>
             </div>
             <div class="user__city">
-                <span class="city__label">Город:</span>
+                <span class="city__label">Р“РѕСЂРѕРґ:</span>
                 <span>Los Angeles</span>
             </div>
+<!--            <a href="">Р•Р©РЃ РљРђРљРђРЇ-РўРћ РЎРЎР«Р›РљРђ</a>-->
             <div class="social__networks">
-                <p>Ссылки на соц.сети:</p>
+                <p>РЎСЃС‹Р»РєРё РЅР° СЃРѕС†.СЃРµС‚Рё:</p>
                 <ul>
                     <li>
                         <a href="http://instagram.com/username">Instagram</a>
@@ -41,14 +48,14 @@
         </div>
     </div>
     <div class="user__blog__wall">
-        <div class="blog__title">Блог</div>
+        <div class="blog__title">Р‘Р»РѕРі</div>
         <div class="user__post">
             <div class="user__post__info">
                 <div class="post__title">
-                    <h3>Российская нейросеть сортирует пластик с точностью 95%</h3>
+                    <h3>Р РѕСЃСЃРёР№СЃРєР°СЏ РЅРµР№СЂРѕСЃРµС‚СЊ СЃРѕСЂС‚РёСЂСѓРµС‚ РїР»Р°СЃС‚РёРє СЃ С‚РѕС‡РЅРѕСЃС‚СЊСЋ 95%</h3>
                 </div>
                 <div class="post__date">
-                    01.01.20
+                    01.01.2020
                 </div>
                 <div class="post__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -61,7 +68,7 @@
         <div class="user__post">
             <div class="user__post__info">
                 <div class="post__title">
-                    <h3>Wi-Fi Hack, одежда</h3>
+                    <h3>Wi-Fi Hack РѕРґРµР¶РґР°</h3>
                 </div>
                 <div class="post__text">
                     Semper risus in hendrerit gravida rutrum quisque. Imperdiet sed euismod nisi porta lorem mollis
@@ -72,7 +79,7 @@
         <div class="user__post">
             <div class="user__post__info">
                 <div class="post__title">
-                    <h3>Twitter будет банить пользователей, которые желают смерти другим</h3>
+                    <h3>Twitter Р±СѓРґРµС‚ Р±Р°РЅРёС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, РєРѕС‚РѕСЂС‹Рµ Р¶РµР»Р°СЋС‚ СЃРјРµСЂС‚Рё РґСЂСѓРіРёРј</h3>
                 </div>
                 <div class="post__text">
                     Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Eget lorem dolor sed
@@ -83,9 +90,9 @@
         </div>
     </div>
     <div class="some__links">
-        <a href="/supermarket/" data-attr="shop_link">Магазин</a>
-        <a href="/clothes/" data-attr="777">Одежда для взрослых</a>
+        <a href="/supermarket/" data-attr="shop_link">РњР°РіР°Р·РёРЅ</a>
+        <a href="/clothes/" data-attr="777">РћРґРµР¶РґР° РґР»СЏ РІР·СЂРѕСЃР»С‹С…</a>
     </div>
 </div>
 </body>
-</html> 
+</html>
