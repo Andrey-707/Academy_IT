@@ -7,6 +7,7 @@ import os, pathlib, random, time
 from rich import print
 from Create_sudoku import create_sudoku
 
+
 def read_sudoku(path):
     """
     Принимает путь (файл .txt), открывает файл на чтение.
@@ -18,6 +19,7 @@ def read_sudoku(path):
     digits = [c for c in puzzle if c in '123456789.']
     grid = [digits[9*i: 9*i+9] for i in range(9)]
     return grid
+
 
 def print_grid(grid):
     """
@@ -38,6 +40,7 @@ def print_grid(grid):
                 print(grid[i][j], end=" ")
         print()
     print("┖──────────────────────────┚")
+
 
 def possible(grid, y, x, n):
     """
@@ -61,6 +64,7 @@ def possible(grid, y, x, n):
                 return False
     return True
 
+
 def choose_grid():
     """
     Функция выбирает случайный файл из списка.
@@ -77,6 +81,7 @@ def choose_grid():
                 some_list.append(full[full.find("pu"):])
     grid = random.choice(some_list)
     return grid
+
 
 def solve(grid):
     """

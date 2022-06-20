@@ -1,4 +1,4 @@
-# Решение головоломок. SUDOKU_5. pyautogui
+# Решение головоломок. SUDOKU. pyautogui
 # Программа решает головоломку SUDOKU, которая передается в виде текстового файла либо через input()
 # от пользователя, затем заполняет головоломку, выведенную на экран (на сайте или в окне приложения).
 
@@ -19,6 +19,7 @@ def read_sudoku(path):
     grid = [digits[9*i: 9*i+9] for i in range(9)]
     return grid
 
+
 def print_grid(A):
     """
     Принимает сетку SUDOKU, выводит отформатировнную сетку на экран.
@@ -38,8 +39,6 @@ def print_grid(A):
                 print(A[i][j], end=" ")
         print()
     print("┖──────────────────────────┚")
-
-# print_grid(grid=read_sudoku('puzzle1.txt'))
 
 
 def possible(grid, y, x, n):
@@ -67,6 +66,7 @@ def possible(grid, y, x, n):
                 return False
     return True
 
+
 def make_grid():
     """
     Функция заполняет сетку SUDOKU данными, полученными от пользвателя (через input()).
@@ -82,17 +82,14 @@ def make_grid():
             break
     return A
 
+
 def fill_grid(grid):
     """
     Функция заполняет головоломку SUDOKU данными при помощи инструментов библиотеки pyautogui.
     """
-    final = [grid[i] for i in range(9)]
-    srt_final = []
-    for row in final:
-        for num in row:
-            srt_final.append(str(num))
+    final = [str(num) for row in grid for num in row]
     tmp = []
-    for num in srt_final:
+    for num in final:
         pyautogui.press(num)
         pyautogui.hotkey('right')
         tmp.append(num)
@@ -100,6 +97,7 @@ def fill_grid(grid):
             pyautogui.hotkey('down')
             for i in range(8):
                 pyautogui.hotkey('left')
+
 
 def solve():
     """

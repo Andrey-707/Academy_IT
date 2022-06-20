@@ -19,6 +19,7 @@ def read_sudoku(path):
     grid = [digits[9*i: 9*i+9] for i in range(9)]
     return grid
 
+
 def print_grid(grid):
     """
     Принимает сетку, выводит отформатированный вывод сетки на экран.
@@ -38,8 +39,6 @@ def print_grid(grid):
                 print(grid[i][j], end=" ")
         print()
     print("┖──────────────────────────┚")
-
-# print_grid(grid=read_sudoku('puzzle1.txt'))
 
 
 def possible(grid, y, x, n):
